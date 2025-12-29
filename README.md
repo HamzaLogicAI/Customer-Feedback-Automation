@@ -174,34 +174,3 @@ customer-feedback-automation/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
-
-- Create an issue for bug reports
-- Use discussions for questions and ideas
-- Check the documentation for setup guidance
-
-## 🔮 Future Enhancements
-
-- [ ] Slack integration for team notifications
-- [ ] Dashboard for feedback analytics
-- [ ] Multi-language support
-- [ ] Advanced sentiment analysis
-- [ ] Integration with CRM systems
-- [ ] Mobile app for team management
-
-## 👤 Author
-
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-
-## 🙏 Acknowledgments
-
-- n8n team for the excellent automation platform
-- Cohere for AI classification capabilities
-- Airtable for flexible data storage
-- Twilio for reliable communication services
-
----
-
-⭐ If this project helped you, please give it a star!
