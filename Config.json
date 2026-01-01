@@ -23,7 +23,7 @@
               "fieldName": "Contact Number",
               "fieldLabel": "Contact Number",
               "fieldType": "number",
-              "placeholder": "Enter your Contaact Number"
+              "placeholder": "Enter your Contact Number"
             },
             {
               "fieldName": "Feedback",
@@ -43,7 +43,7 @@
       ],
       "id": "a5630024-04d2-4191-943e-84f5f88a23ef",
       "name": "On form submission",
-      "webhookId": "f43d6751-5ab4-41d2-99fa-3c05132a53e3"
+      "webhookId": "REPLACE_WITH_YOUR_WEBHOOK_ID"
     },
     {
       "parameters": {
@@ -74,7 +74,7 @@
       "name": "Cohere Chat Model",
       "credentials": {
         "cohereApi": {
-          "id": "1w1HOecggLV8ntrU",
+          "id": "COHERE_CREDENTIAL_ID",
           "name": "CohereApi account"
         }
       }
@@ -179,8 +179,8 @@
     },
     {
       "parameters": {
-        "from": "+14155238886",
-        "to": "+923107015486",
+        "from": "YOUR_TWILIO_FROM_NUMBER",
+        "to": "YOUR_RECIPIENT_PHONE_NUMBER",
         "toWhatsapp": true,
         "message": "=The user {{ $json.fields['Full Name'] }} has given {{ $('Merge').item.json.output }} that \"{{ $json.fields.Feedback }}\"",
         "options": {}
@@ -195,7 +195,7 @@
       "name": "Send an SMS/MMS/WhatsApp message",
       "credentials": {
         "twilioApi": {
-          "id": "yq14rOnl3cPoGoSs",
+          "id": "TWILIO_CREDENTIAL_ID",
           "name": "Twilio account"
         }
       }
@@ -205,17 +205,17 @@
         "operation": "create",
         "base": {
           "__rl": true,
-          "value": "apptqdRTDlLginTqy",
+          "value": "YOUR_AIRTABLE_BASE_ID",
           "mode": "list",
           "cachedResultName": "Customer Feedback",
-          "cachedResultUrl": "https://airtable.com/apptqdRTDlLginTqy"
+          "cachedResultUrl": "https://airtable.com/YOUR_AIRTABLE_BASE_ID"
         },
         "table": {
           "__rl": true,
-          "value": "tblXGSbOtvE5lvI1g",
+          "value": "YOUR_AIRTABLE_TABLE_ID",
           "mode": "list",
           "cachedResultName": "Complain",
-          "cachedResultUrl": "https://airtable.com/apptqdRTDlLginTqy/tblXGSbOtvE5lvI1g"
+          "cachedResultUrl": "https://airtable.com/YOUR_AIRTABLE_BASE_ID/YOUR_AIRTABLE_TABLE_ID"
         },
         "columns": {
           "mappingMode": "defineBelow",
@@ -283,11 +283,11 @@
         64,
         -512
       ],
-      "id": "caa76a77-00f3-422f-9c07-85e33c74dd0e",
+      "id": "28fb3bc2-b1ae-469d-a3ff-bb2e1b421ddb",
       "name": "Complain",
       "credentials": {
         "airtableTokenApi": {
-          "id": "UuUm0CvbyHNkxEmp",
+          "id": "AIRTABLE_CREDENTIAL_ID",
           "name": "Airtable Personal Access Token account"
         }
       }
@@ -297,17 +297,17 @@
         "operation": "create",
         "base": {
           "__rl": true,
-          "value": "apptqdRTDlLginTqy",
+          "value": "YOUR_AIRTABLE_BASE_ID",
           "mode": "list",
           "cachedResultName": "Customer Feedback",
-          "cachedResultUrl": "https://airtable.com/apptqdRTDlLginTqy"
+          "cachedResultUrl": "https://airtable.com/YOUR_AIRTABLE_BASE_ID"
         },
         "table": {
           "__rl": true,
-          "value": "tblVR75SQTSDhv7g1",
+          "value": "YOUR_AIRTABLE_TABLE_ID_COMPLEMENT",
           "mode": "list",
           "cachedResultName": "Complement",
-          "cachedResultUrl": "https://airtable.com/apptqdRTDlLginTqy/tblVR75SQTSDhv7g1"
+          "cachedResultUrl": "https://airtable.com/YOUR_AIRTABLE_BASE_ID/YOUR_AIRTABLE_TABLE_ID_COMPLEMENT"
         },
         "columns": {
           "mappingMode": "defineBelow",
@@ -375,11 +375,11 @@
         64,
         -320
       ],
-      "id": "0576ab09-cd44-4d80-8911-e38e6688c8b3",
+      "id": "7bb4593f-5e74-4e49-b70f-93b2b5f19ee6",
       "name": "Complement",
       "credentials": {
         "airtableTokenApi": {
-          "id": "UuUm0CvbyHNkxEmp",
+          "id": "AIRTABLE_CREDENTIAL_ID",
           "name": "Airtable Personal Access Token account"
         }
       }
@@ -389,17 +389,17 @@
         "operation": "create",
         "base": {
           "__rl": true,
-          "value": "apptqdRTDlLginTqy",
+          "value": "YOUR_AIRTABLE_BASE_ID",
           "mode": "list",
           "cachedResultName": "Customer Feedback",
-          "cachedResultUrl": "https://airtable.com/apptqdRTDlLginTqy"
+          "cachedResultUrl": "https://airtable.com/YOUR_AIRTABLE_BASE_ID"
         },
         "table": {
           "__rl": true,
-          "value": "tbl6Gdq4PFqtcn4VG",
+          "value": "YOUR_AIRTABLE_TABLE_ID_FEATURE",
           "mode": "list",
           "cachedResultName": "Feature Addition Request",
-          "cachedResultUrl": "https://airtable.com/apptqdRTDlLginTqy/tbl6Gdq4PFqtcn4VG"
+          "cachedResultUrl": "https://airtable.com/YOUR_AIRTABLE_BASE_ID/YOUR_AIRTABLE_TABLE_ID_FEATURE"
         },
         "columns": {
           "mappingMode": "defineBelow",
@@ -471,15 +471,15 @@
       "name": "Feature Addition Request",
       "credentials": {
         "airtableTokenApi": {
-          "id": "UuUm0CvbyHNkxEmp",
+          "id": "AIRTABLE_CREDENTIAL_ID",
           "name": "Airtable Personal Access Token account"
         }
       }
     },
     {
       "parameters": {
-        "from": "+14155238886",
-        "to": "+923107015486",
+        "from": "YOUR_TWILIO_FROM_NUMBER",
+        "to": "YOUR_RECIPIENT_PHONE_NUMBER",
         "toWhatsapp": true,
         "message": "=The user {{ $json.fields['Full Name'] }} has given {{ $('Merge').item.json.output }} that \"{{ $json.fields.Feedback }}\"",
         "options": {}
@@ -494,15 +494,15 @@
       "name": "Send an SMS/MMS/WhatsApp message1",
       "credentials": {
         "twilioApi": {
-          "id": "yq14rOnl3cPoGoSs",
+          "id": "TWILIO_CREDENTIAL_ID",
           "name": "Twilio account"
         }
       }
     },
     {
       "parameters": {
-        "from": "+14155238886",
-        "to": "+923107015486",
+        "from": "YOUR_TWILIO_FROM_NUMBER",
+        "to": "YOUR_RECIPIENT_PHONE_NUMBER",
         "toWhatsapp": true,
         "message": "=The user {{ $json.fields['Full Name'] }} has given {{ $('Merge').item.json.output }} that \"{{ $json.fields.Feedback }}\"",
         "options": {}
@@ -517,7 +517,7 @@
       "name": "Send an SMS/MMS/WhatsApp message2",
       "credentials": {
         "twilioApi": {
-          "id": "yq14rOnl3cPoGoSs",
+          "id": "TWILIO_CREDENTIAL_ID",
           "name": "Twilio account"
         }
       }
@@ -527,7 +527,7 @@
         "sendTo": "={{ $('Merge').item.json['Email Address'] }}",
         "subject": "Acknowledgment of Your Complaint",
         "emailType": "text",
-        "message": "=Dear  {{ $('Complain').item.json.fields['Full Name'] }} ,\n\nThank you for reaching out to us. We have received your complaint and want to assure you that our team is actively working on resolving the issue.\n\nWe understand the importance of your concern and will ensure that it is addressed promptly. You will be updated shortly with a resolution.\n\nIf you have any further questions in the meantime, please do not hesitate to contact us.\n\nBest regards,\nHamzaLogicAI",
+        "message": "=Dear  {{ $('Complain').item.json.fields['Full Name'] }} ,\n\nThank you for reaching out to us. We have received your complaint and want to assure you that our team is actively working on resolving the issue.\n\nWe understand the importance of your concern and will ensure that it is addressed promptly. You will be updated shortly with a resolution.\n\nIf you have any further questions in the meantime, please do not hesitate to contact us.\n\nBest regards,\nYOUR_COMPANY_NAME",
         "options": {}
       },
       "type": "n8n-nodes-base.gmail",
@@ -538,10 +538,10 @@
       ],
       "id": "568e0d81-6b52-44d5-9e7f-dd6bd385c58a",
       "name": "Send a message",
-      "webhookId": "8430cf34-554c-41c6-8095-48a0e2c0fc63",
+      "webhookId": "REPLACE_WITH_YOUR_WEBHOOK_ID",
       "credentials": {
         "gmailOAuth2": {
-          "id": "QAYygoXjQ7Mm4ZPZ",
+          "id": "GMAIL_CREDENTIAL_ID",
           "name": "Gmail account"
         }
       }
@@ -551,7 +551,7 @@
         "sendTo": "={{ $('Merge').item.json['Email Address'] }}",
         "subject": "Acknowledgment of Your Feature Request",
         "emailType": "text",
-        "message": "=Dear {{ $('Feature Addition Request').item.json.fields['Full Name'] }},\n\nThank you for reaching out and sharing your suggestion with us. We appreciate your feedback and are always eager to hear from our users about ways to enhance our services.\n\nWe have reviewed your request for the addition of feature, and we understand how it could provide added value. We will keep you updated on the progress, and if you have any other ideas or questions, feel free to share them with us.\n\nThank you once again for your valuable contribution.\n\nBest regards,\n\nBest regards,\nHamzaLogicAI",
+        "message": "=Dear {{ $('Feature Addition Request').item.json.fields['Full Name'] }},\n\nThank you for reaching out and sharing your suggestion with us. We appreciate your feedback and are always eager to hear from our users about ways to enhance our services.\n\nWe have reviewed your request for the addition of feature, and we understand how it could provide added value. We will keep you updated on the progress, and if you have any other ideas or questions, feel free to share them with us.\n\nThank you once again for your valuable contribution.\n\nBest regards,\n\nBest regards,\nYOUR_COMPANY_NAME",
         "options": {}
       },
       "type": "n8n-nodes-base.gmail",
@@ -562,10 +562,10 @@
       ],
       "id": "1c4ad0b8-d476-418e-ba35-d6fe68c4e749",
       "name": "Send a message1",
-      "webhookId": "8430cf34-554c-41c6-8095-48a0e2c0fc63",
+      "webhookId": "REPLACE_WITH_YOUR_WEBHOOK_ID",
       "credentials": {
         "gmailOAuth2": {
-          "id": "QAYygoXjQ7Mm4ZPZ",
+          "id": "GMAIL_CREDENTIAL_ID",
           "name": "Gmail account"
         }
       }
@@ -708,11 +708,11 @@
     "executionOrder": "v1",
     "availableInMCP": false
   },
-  "versionId": "2a2ac5da-07c5-4fc6-94d3-c1408dc54d64",
+  "versionId": "REPLACE_WITH_NEW_VERSION_ID",
   "meta": {
     "templateCredsSetupCompleted": true,
-    "instanceId": "4b93e6351bc6f378a5a3688d9d0cf9d833e523d697e88d4bc1d95ab53cbc4141"
+    "instanceId": "REPLACE_WITH_YOUR_INSTANCE_ID"
   },
-  "id": "hmpTwTyPGSKvu899",
+  "id": "REPLACE_WITH_NEW_WORKFLOW_ID",
   "tags": []
 }
